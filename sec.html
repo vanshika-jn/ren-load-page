@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RENAISSANCE</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: white;
+        }
+
+        .hero {
+            min-height: 100vh;
+            /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                        url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-06%20134735-99EOdemzhuDMo9PYjDgtj0mjifHPWZ.png'); */
+           /* background:url( " https://media.licdn.com/dms/image/v2/D5622AQEByr-p-lKu8w/feedshare-shrink_800/feedshare-shrink_800/0/1709287895394?e=2147483647&v=beta&t=SE-yybZClBcQLo4-iIrRRAHUU0fRqQ6xftM3kXCx9og "); */
+           background: url("https://images.shiksha.com/mediadata/images/articles/1490877207php35Znzn.jpeg ");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 4rem;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        /* .decorative-element {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            border: 4px solid #0ff;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        } */
+
+        .content {
+            text-align: center;
+            padding-top: 4rem;
+        }
+
+        .date {
+            color: #fff;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .title {
+            font-size: 100px;
+            color: rgb(0, 0, 0);
+            margin-bottom: 3rem;
+            font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .countdown-item {
+            text-align: center;
+        }
+
+        .countdown-number {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        .countdown-label {
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .cta-button {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        .buy-tickets {
+            background-color: white;
+            color: black;
+        }
+
+        .see-lineup {
+            background-color: #0ff;
+            color: black;
+        }
+
+        .decorative-stars {
+            position: absolute;
+            top: 20%;
+            left: 15%;
+            color: #0ff;
+            font-size: 1.5rem;
+        }
+
+        .countdown-container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      color: rgb(255, 255, 255);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+      color: rgb(104, 104, 104);
+    }
+
+    .countdown {
+      display: flex;
+      /* justify-content: space-between; */
+      gap: 20px;
+    }
+
+    .time-box {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      border-radius: 10px;
+      width: 80px;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+      position: relative;
+      color: white;
+    }
+
+    .label {
+      font-size: 0.9rem;
+      color: #ddd;
+      margin-top: 5px;
+    }
+
+
+
+        
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem 2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .title {
+                font-size: 3rem;
+            }
+
+            .countdown {
+                gap:1rem;
+            }
+
+            .countdown-number {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        
+        <!-- <nav>
+            <div class="logo">SUNFEST</div>
+            <div class="nav-links">
+                <a href="#">HOME</a>
+                <a href="#">SUNFEST 2018</a>
+                <a href="#">ARTISTS</a>
+                <a href="#">BLOG</a>
+                <a href="#">CONTACT</a>
+            </div>
+        </nav> -->
+        
+        <!-- <div class="decorative-element"></div>
+        <div class="decorative-stars">★ ★ ★</div> -->
+        
+        <div class="content">
+            <div class="date">06.02.25</div>
+            <h1 class="title">RENAISSANCE</h1>
+            
+            
+            <div class="countdown-container">
+                <h1>ONLY</h1>
+                <div class="countdown">
+                  <div class="time-box">
+                    <span id="days">0</span>
+                    <div class="label">DAYS</div>
+                  </div>
+                  <div class="time-box">
+                    <span id="hours">0</span>
+                    <div class="label">HOURS</div>
+                  </div>
+                  <div class="time-box">
+                    <span id="minutes">0</span>
+                    <div class="label">MINUTES</div>
+                  </div>
+                  <div class="time-box">
+                    <span id="seconds">0</span>
+                    <div class="label">SECONDS</div>
+                  </div>
+                </div>
+                <h1>LEFT!</h1>
+
+              </div>
+            
+           
+        </div>
+    </div>
+    <script src="second.js"> </script>
+
+
+</body>
+</html>

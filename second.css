@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: white;
+        }
+
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                        url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-06%20134735-99EOdemzhuDMo9PYjDgtj0mjifHPWZ.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 4rem;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .decorative-element {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            border: 4px solid #0ff;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .content {
+            text-align: center;
+            padding-top: 4rem;
+        }
+
+        .date {
+            color: #fff;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .title {
+            font-size: 5rem;
+            color: #0ff;
+            margin-bottom: 3rem;
+            font-family: 'Brush Script MT', cursive;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .countdown-item {
+            text-align: center;
+        }
+
+        .countdown-number {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        .countdown-label {
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        
+
+        .see-lineup {
+            background-color: #0ff;
+            color: black;
+        }
+
+        .decorative-stars {
+            position: absolute;
+            top: 20%;
+            left: 15%;
+            color: #0ff;
+            font-size: 1.5rem;
+        }
+
+        #timer {
+            font-size: 3em;
+            /* margin-top: 20px; */
+            padding: 10px;
+            background-color: rgb(255, 188, 198);
+            /* border: 2px solid #3b0202; */
+            display: inline-block;
+            border-radius: 20px;
+        }
+
+
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem 2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .title {
+                font-size: 3rem;
+            }
+
+            .countdown {
+                gap: 1.5rem;
+            }
+
+            .countdown-number {
+                font-size: 2.5rem;
+            }
+        }
